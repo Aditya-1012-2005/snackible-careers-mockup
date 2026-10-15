@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Careers at Snackible</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --color-green: #02514F;
+    --color-green-dark: #013b3a;
+    --color-green-deep: #012827;
+    --color-btn-text: #ffffff;
+    --color-heading-text: #0d0c0c;
+    --color-body-text: #0d0c0c;
+    --color-sub-text: #5c6b69;
+    --color-border: #cfe8e2;
+    --color-main-background: #ffffff;
+    --color-footer-background: #02514F;
+    --color-footer-text: #ffffff;
+    --color-footer-link: #bfe8df;
+    --font-stack: 'Oswald', sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    font-family: var(--font-stack);
+    font-weight: 300;
+    color: var(--color-body-text);
+    background: var(--color-main-background);
+    line-height: 1.6;
+  }
+
+  h1, h2, h3 {
+    font-family: var(--font-stack);
+    font-weight: 400;
+    color: var(--color-heading-text);
+    margin: 0;
+  }
+
+  a { color: var(--color-green-dark); text-decoration: none; }
+
+  .wrap {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 72px 0 56px;
+    text-align: center;
+    background: linear-gradient(180deg, #e9f8f4 0%, #ffffff 100%);
+    border-bottom: 3px solid var(--color-green);
+  }
+  .hero .tag {
+    display: inline-block;
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: var(--color-green);
+    padding: 6px 16px;
+    border-radius: 999px;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+  .hero h1 {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.15;
+    margin-bottom: 16px;
+  }
+  .hero p {
+    font-size: 18px;
+    color: var(--color-sub-text);
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  /* COLUMNS */
+  .roles {
+    padding: 56px 0 64px;
+  }
+  .roles-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+  @media (max-width: 860px) {
+    .roles-grid { grid-template-columns: 1fr; }
+  }
+
+  .role-card {
+    border: 1px solid var(--color-border);
+    border-top: 4px solid var(--color-green);
+    border-radius: 16px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+  }
+
+  .role-card .eyebrow {
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-green-dark);
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+
+  .role-card h2 {
+    font-size: 26px;
+    margin-bottom: 12px;
+  }
+
+  .role-card .blurb {
+    font-size: 15px;
+    color: var(--color-sub-text);
+    margin-bottom: 20px;
+  }
+
+  .dept-label {
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--color-green-dark);
+    margin-bottom: 10px;
+  }
+
+  .dept-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+  .dept-chips span {
+    background: #e9f8f4;
+    color: var(--color-green-deep);
+    border: 1px solid var(--color-green);
+    font-size: 13px;
+    font-weight: 500;
+    padding: 5px 13px;
+    border-radius: 999px;
+  }
+
+  .role-card .spacer { flex-grow: 1; }
+
+  .apply-btn {
+    display: inline-block;
+    text-align: center;
+    background: var(--color-green);
+    color: var(--color-btn-text);
+    font-family: var(--font-stack);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 14px 28px;
+    border-radius: 999px;
+    transition: background 0.15s ease;
+  }
+  .apply-btn:hover { background: var(--color-green-dark); }
+
+  /* FOOTER */
+  footer {
+    background: var(--color-footer-background);
+    color: var(--color-footer-text);
+    padding: 40px 0;
+    text-align: center;
+  }
+  footer a {
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+  footer .data-note {
+    font-size: 13px;
+    color: var(--color-footer-link);
+    margin-top: 10px;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="wrap">
+      <span class="tag">Mu(n)ch Better, Together</span>
+      <h1>Come build the future of healthy snacking with us</h1>
+      <p>We're a small, fast-moving D2C team obsessed with making snacking better for you &mdash; join us and help shape a brand millions are starting to love.</p>
+    </div>
+  </section>
+
+  <section class="roles">
+    <div class="wrap roles-grid">
+
+      <!-- INTERNSHIPS -->
+      <div class="role-card">
+        <div class="eyebrow">Internships</div>
+        <h2>Internships at Snackible</h2>
+        <p class="blurb">Short-term, hands-on roles for students and recent grads who want real ownership early.</p>
+
+        <div class="dept-label">Departments</div>
+        <div class="dept-chips">
+          <span>Marketing</span>
+          <span>D2C Growth</span>
+          <span>Content</span>
+          <span>Operations</span>
+        </div>
+
+        <div class="spacer"></div>
+        <a class="apply-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdKL5GqlZGJTYQCBNDB23FDN-Jp_cctLe_5YXsomfs__kyJ8w/viewform" target="_blank" rel="noopener">Apply Now</a>
+      </div>
+
+      <!-- FULL-TIME -->
+      <div class="role-card">
+        <div class="eyebrow">Full-Time Roles</div>
+        <h2>Full-Time Roles at Snackible</h2>
+        <p class="blurb">Own a function end-to-end in a small, fast-moving team building a brand people love.</p>
+
+        <div class="dept-label">Departments</div>
+        <div class="dept-chips">
+          <span>Growth</span>
+          <span>Operations</span>
+          <span>Supply Chain</span>
+          <span>Brand</span>
+        </div>
+
+        <div class="spacer"></div>
+        <a class="apply-btn" href="https://docs.google.com/forms/d/e/1FAIpQLScIIHFsiXr1ggsCIfIrFIwbvlT5GcB7ERtpWbjOrn-1_rGWbw/viewform" target="_blank" rel="noopener">Apply Now</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <p>Questions about a role? Reach us at <a href="mailto:careers@snackible.com">careers@snackible.com</a></p>
+      <p class="data-note">By applying, you consent to Snackible storing and reviewing your application details solely for recruitment purposes. We don't share your data with third parties.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
